@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+
+    <div class="form">
+            <div class="login-container">
+                <h2>Iniciar Sesión</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="nombreUsuario">Usuario</label>
+                        <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" name="contraseña" required>
+                    </div>
+                    <button type="submit">Ingresar</button>
+                </form>
+                <p id="error"></p>
+                <div id="roleSelection" style="display: none;">
+                    <h3>Seleccione su rol:</h3>
+                    <div id="rolesContainer"></div> 
+                </div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<style>
+    body{
+        background: url(https://www.semana.com/resizer/v2/MGSRCROCY5GETHHQC2XBMM2CEQ.jpg?auth=3fdbfbed84e460f0d2fb824754d8e9497c0ba382a677c1aa082e90d001af9c50&smart=true&quality=75&width=1280&height=720);
+        background-size: 100% 100%;
+    }      
+</style>
+</html>
+
+

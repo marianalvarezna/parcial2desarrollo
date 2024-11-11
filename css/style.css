@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    height:100vh ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.login-container{
+    align-items: center;
+    height: 280px;
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Estilo del formulario */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 95%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #9c6a3d;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #894e1a;
+}
+
+/* Mensaje de error */
+#error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Contenedor de selección de roles */
+#roleSelection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#rolesContainer button {
+    width: 100%;
+    background-color: #a28165;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#rolesContainer button:hover {
+    background-color: #894e1a;
+}
+
+#rolesContainer div {
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+

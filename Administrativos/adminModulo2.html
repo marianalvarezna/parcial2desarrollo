@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos de la Empresa</title>
+    <style>
+        .panel {
+            background-color: #d3b295;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .input-group label {
+            flex: 1;
+            font-weight: bold;
+            padding-right: 10px;
+        }
+
+        .input-group input {
+            flex: 2;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .result {
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .calculate-btn {
+            background-color: #a28165;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .calculate-btn:hover {
+            background-color: #894e1a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="panel">
+    <h3>Gastos de la Empresa</h3>
+
+    <div class="input-group">
+        <label for="servicios">Servicios:</label>
+        <input type="number" id="servicios" placeholder="Ingrese monto en pesos">
+    </div>
+
+    <div class="input-group">
+        <label for="sueldos">Sueldos:</label>
+        <input type="number" id="sueldos" placeholder="Ingrese monto en pesos">
+    </div>
+
+    <div class="input-group">
+        <label for="mantenimientos">Mantenimientos:</label>
+        <input type="number" id="mantenimientos" placeholder="Ingrese monto en pesos">
+    </div>
+
+    <button class="calculate-btn" onclick="calcularSuma()">Calcular</button>
+
+    <div class="result" id="resultado"></div>
+</div>
+
+<script>
+    function calcularSuma() {
+        const servicios = parseFloat(document.getElementById('servicios').value) || 0;
+        const sueldos = parseFloat(document.getElementById('sueldos').value) || 0;
+        const mantenimientos = parseFloat(document.getElementById('mantenimientos').value) || 0;
+
+        const total = servicios + sueldos + mantenimientos;
+        document.getElementById('resultado').textContent = 'Total de gastos: $' + total.toLocaleString();
+    }
+</script>
+
+</body>
+</html>
+
